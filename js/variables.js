@@ -25,7 +25,7 @@ var jugo = {"ingrediente1":"fresa",
 console.log("jugo: ", jugo.ingrediente1);
 
 //Variables DOM ('Modelo de objetos del documento')
-/* El DOM es la estructura de objetos que genera el navegador cuando se carga un documento y se pued alterar mediante javascript para cambiar dinámicamente los contenidos y aspecto de la página */
+/* El DOM es la estructura de objetos que genera el navegador cuando se carga un documento y se puede alterar mediante javascript para cambiar dinámicamente los contenidos y aspecto de la página */
 
 var caja = document.querySelector("#caja");
 console.log("caja: ", caja);
@@ -34,8 +34,24 @@ caja.style.width = "200px";
 caja.style.height = "200px";
 caja.style.background = "red";
 
+var cajita = document.querySelector("#cajita");
+console.log("caja: ", cajita);
 
-var cajas = document.querySelectorAll(".cajas");
-console.log("cajas: ", cajas)
+cajita.style.width = "100px";
+cajita.style.height = "100px";
+cajita.style.background = "blue";
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*=====  End of Variables  ======*/

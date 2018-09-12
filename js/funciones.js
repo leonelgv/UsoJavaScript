@@ -24,7 +24,7 @@ function operacion(digito1, digito2){
 }
 
 
-operacion(5, 7);
+operacion(54, 71);
 operacion(10, 5);
 
 /*=============================================
@@ -46,4 +46,4 @@ function retorno2(numero){
 	return numero;
 }
 
-console.log(retorno2(4));
+console.log(retorno2(78));
