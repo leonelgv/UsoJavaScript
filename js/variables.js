@@ -4,6 +4,9 @@
 
 //Variables númericas
 var numero = 5;
+var x = document.getElementById("variable");
+x.innerHTML = "Uso de una variable numerica : " + numero + ".";
+
 console.log("numero: ", numero);
 
 //Variables de texto
