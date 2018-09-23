@@ -2,41 +2,44 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
-    <link rel="stylesheet" href="css/foundation.min.css">
-
-
+    <title>Frameworks CSS</title>
+    <link rel="stylesheet" type="text/css">
 </head>
 <body>
 
-<div class="container">
-    <div class="row">
-        <div class="col s12 m12 l12">
-            <button id="boton" class="btn" onclick="cambiarCols()">Cambiar columnas</button>
-            <button id="boton1" class="btn" onclick="cambiarCols()">Regresar</button>
+<div id="contenedor">
+    <div id="fila1">
+        <div id="col1_1">
+            <button id="boton1" onclick="materialize()">Materialize</button>
+            <button id="boton2" onclick="foundation()">Foundation</button>
+            <button id="boton3" onclick="bootstrapp()">Bootstrap</button>
         </div>
     </div>
-    <div class="row">
-        <div class="col s12 m12 l12">
+    <div id="fila2">
+        <div id="col2_1">
             <header>
-                <nav class="nav-extended">
-                    <div class="nav-wrapper">
-                        <a href="index.html" class="brand-logo center">Aplicaciones web</a>
+                <nav id="nav1">
+                    <div id="navbarNav">
+                        <a href="index.html" id="logo">Aplicaciones web</a>
+                        <ul id="nav-mobile">
+                            <li><a href="https://materializecss.com/">Materialize</a></li>
+                            <li><a href="https://foundation.zurb.com/">Foundation</a></li>
+                            <li><a href="http://getbootstrap.com/">Boostrap</a></li>
+                        </ul>
                     </div>
                 </nav>
             </header>
         </div>
     </div>
-    <div class="row">
-        <div id="col1" class="col s12 m4 l3">
-            <nav>
-                Aqui esta el menu
-            </nav>
+    <div id="fila3">
+        <div id="col3_1">
+            <div>
+                Barra lateral
+            </div>
         </div>
-        <div id="col2" class="col s12 m8 l6">
+        <div id="col3_2">
             <article>
-                <table class="responsive-table">
+                <table id="tabla">
                     <thead>
                     <tr>
                         <th>Name</th>
@@ -65,14 +68,14 @@
                 </table>
             </article>
         </div>
-        <div id="col3" class="col s12 m12 l3">
+        <div id="col3_3">
             <aside>
                 Publicidad
             </aside>
         </div>
     </div>
-    <div class="row">
-        <div class="col s12 m12 l12">
+    <div id="fila4">
+        <div id="col4_1">
             <footer class="page-footer">
                 <div class="footer-copyright">
                     &copy; 2018 Leonel Gonzalez Vidales
@@ -82,8 +85,10 @@
     </div>
 </div>
 
-<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript"></script>
+
 
 <script type="text/javascript" src="js/framework.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
 </body>
 </html>
