@@ -15,10 +15,9 @@ function ejemploAJAX() {
 		ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
 	}
   
-
   	ajaxRequest.onreadystatechange = function() {
     if (ajaxRequest.readyState == 4 && ajaxRequest.status == 200) {
-     document.getElementById("text").innerHTML = ajaxRequest.responseText;
+    	document.getElementById("text").innerHTML = ajaxRequest.responseText;
     }
   };
   ajaxRequest.open("GET", "documento.txt", true);
@@ -39,9 +38,11 @@ function leerJSON(){
 	ajaxRequest.onreadystatechange = function() {
     if (ajaxRequest.readyState === 4 && ajaxRequest.status === 200) {
     	var datosJSON = JSON.parse(ajaxRequest.responseText);
-    	console.log(datos);
+    	console.log(ajaxRequest.responseText);
+    	console.log(datosJSON);
     	if(datos.innerHTML === ""){
     		for (var i in datosJSON){
+    			//console.log(datosJSON[i]);
     			datos.innerHTML += i + ": " + datosJSON[i] + "<br />";
     		}
     	}

@@ -25,7 +25,10 @@ console.log("colores: ", colores[0]);
 var jugo = {"ingrediente1":"fresa",
 			"ingrediente2":"mandarina",
 			"ingrediente3":"platano"};
-console.log("jugo: ", jugo.ingrediente1);
+console.log("jugo: ", jugo);
+for(var i in jugo){
+	console.log(jugo[i]);
+}
 
 //Variables DOM ('Modelo de objetos del documento')
 /* El DOM es la estructura de objetos que genera el navegador cuando se carga un documento y se puede alterar mediante javascript para cambiar dinámicamente los contenidos y aspecto de la página */

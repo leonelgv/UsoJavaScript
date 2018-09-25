@@ -1,5 +1,12 @@
 {
+	{
 	"nombre": "Leonel",
 	"apellidos": "Gonzalez Vidales",
 	"carrera": "Ingenieria en informática"
+	},
+	{
+	"nombre": "Leonel",
+	"apellidos": "Gonzalez Vidales",
+	"carrera": "Ingenieria en informática"
+	}
 }

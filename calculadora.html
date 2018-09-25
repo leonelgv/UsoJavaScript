@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario AJAX</title>
+	
+</head>
+<body>
+	<div class="container">
+	Operador1: <input type="text" id="operador1"><br /><br />
+	Operaci&oacute;n: <select name="operacion" id="operacion">
+		<option value="1">+</option>
+		<option value="2">-</option>
+		<option value="3">*</option>
+		<option value="4">/</option>
+		<option value="5">%</option>
+		
+	</select><br /><br />
+	Operador2: <input type="text" id="operador2"><br /><br />
+
+	<input type="submit" value="Enviar" onclick="calcular()">
+	<div id="mensaje"></div>
+	</div>
+
+	<script type="text/javascript" src="js/calculadora.js"></script>
+	
+</body>
+</html>
